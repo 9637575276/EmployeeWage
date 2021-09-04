@@ -6,12 +6,16 @@ namespace EmployeeWage
     {
         static void Main(string[] args)
         {
-            int PER_HOUR = 20;
-            int PART_TIME = 4;
-            int salary;
-            salary = PER_HOUR * PART_TIME;
-            Console.WriteLine($"Salary is : {salary}");
+            int rand = new Random().Next(0, 2);
+            if (rand == 0)
+            {
+                Console.WriteLine("Employee is Present");
+            }
+            else
+            {
+                Console.WriteLine("Employee is Absent");
 
+            }
         }
     }
 }
